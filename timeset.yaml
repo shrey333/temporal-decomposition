@@ -1,0 +1,27 @@
+name: timeset
+channels:
+  - conda-forge
+  - huggingface
+  - nvidia
+  - pytorch
+dependencies:
+  - python=3.12
+  - bitsandbytes
+  - chardet
+  - einops
+  - jsonlines
+  - lxml
+  - matplotlib
+  - peft
+  - scikit-learn
+  - scipy
+  - sentencepiece
+  - spacy
+  - transformers
+  - trl
+  - xformers
+  - pytorch
+  # - pytorch-cuda=12.4
+  - cuda-toolkit=12.4
+  - pip:
+      - google-generativeai

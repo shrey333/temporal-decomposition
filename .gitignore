@@ -1,0 +1,91 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+timeset/
+
+# Data and Models
+MATRES/data/
+MATRES/StructTempRel-EMNLP17/
+TORQUE/data/
+
+# Logs
+log/
+*.log
+logs/
+logging/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# OS
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.temp
+
+# Model Weights and Checkpoints
+*.pth
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+*.model
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Environment Variables
+.env
+.env.*
+
+# Output Files
+predictions/
+
+# Misc
+*.zip
+*.tar.gz
+*.rar
+temp/
+tmp/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/ 

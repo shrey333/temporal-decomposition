@@ -1,0 +1,1002 @@
+
+=====================================================================
+This module is intended solely for building or source activating user
+python environments, i.e.,
+
+    mamba create -n myenv -c conda-forge
+
+or
+
+    source activate myenv
+
+To list available environments, run:
+
+    mamba info --envs
+
+See our docs: https://links.asu.edu/solpy
+
+Any other use is NOT TESTED.
+=====================================================================
+
+  
+2024-11-07 00:40:40:INFO - #examples: 24523
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 5, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 6, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 6, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 6, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 6, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 6, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 6, not the default 3.
+2024-11-07 00:40:43:WARNING - This question is annotated by 6, not the default 3.
+2024-11-07 00:40:43:INFO - #examples: 1483
+2024-11-07 00:40:50:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=0.0001, lora_dimension=16, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:40:50:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:40:51:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:40:51:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f03-4b76f3270747d53217633a88;6e36c62b-8e6e-4b9e-b963-559d2411922a)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f03-4b76f3270747d53217633a88;6e36c62b-8e6e-4b9e-b963-559d2411922a)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:40:54:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-05, lora_dimension=16, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:40:54:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:40:54:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:40:54:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f06-74227acd1b0c4952541f6b8e;35113761-67c6-4834-a38a-a9de9d353f06)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f06-74227acd1b0c4952541f6b8e;35113761-67c6-4834-a38a-a9de9d353f06)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:40:58:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-06, lora_dimension=16, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:40:58:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:40:58:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:40:58:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f0a-5b8fb6a557cd825d32735d76;7cd3423d-a8e6-4d52-a924-2b1ae92de8be)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f0a-5b8fb6a557cd825d32735d76;7cd3423d-a8e6-4d52-a924-2b1ae92de8be)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:41:02:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=0.0001, lora_dimension=64, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:41:02:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:41:02:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:41:02:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f0e-696ac339628e01335ca4ba67;ddb3d151-d78e-407d-9167-e769ae276efb)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f0e-696ac339628e01335ca4ba67;ddb3d151-d78e-407d-9167-e769ae276efb)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:41:06:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-05, lora_dimension=64, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:41:06:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:41:06:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:41:06:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f12-65ce2c29050e272258886cd6;ffd479c3-53c3-4191-a61d-cd432c584ee8)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f12-65ce2c29050e272258886cd6;ffd479c3-53c3-4191-a61d-cd432c584ee8)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:41:10:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-06, lora_dimension=64, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:41:10:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:41:10:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:41:10:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f16-002eaaf80318293c79b25790;e491bf03-9446-46f0-80f7-21b8dab20185)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f16-002eaaf80318293c79b25790;e491bf03-9446-46f0-80f7-21b8dab20185)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:41:13:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=0.0001, lora_dimension=16, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:41:13:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:41:13:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:41:13:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f19-54fac19e662a82080e51b436;4ce9094b-5811-4b04-b1ae-4299f90b15b0)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f19-54fac19e662a82080e51b436;4ce9094b-5811-4b04-b1ae-4299f90b15b0)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:41:17:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-05, lora_dimension=16, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:41:17:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:41:17:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:41:17:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f1d-6eae45ab2a22c6df7a1a792b;ff495c15-1e2e-40e3-8878-23d401328e0f)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f1d-6eae45ab2a22c6df7a1a792b;ff495c15-1e2e-40e3-8878-23d401328e0f)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:41:21:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-06, lora_dimension=16, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:41:21:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:41:21:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:41:21:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f21-383bd42043dde6cc2cb8f089;05b30bd3-e5e4-40ec-98ca-1a128cd97920)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f21-383bd42043dde6cc2cb8f089;05b30bd3-e5e4-40ec-98ca-1a128cd97920)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:41:25:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=0.0001, lora_dimension=64, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:41:25:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:41:25:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:41:25:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f25-683eb2074035c9495321d3f7;01687f82-bac7-47da-91aa-5057c6932470)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f25-683eb2074035c9495321d3f7;01687f82-bac7-47da-91aa-5057c6932470)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:41:29:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-05, lora_dimension=64, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:41:29:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:41:29:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:41:29:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f29-4109d37723affdb41c1a1620;86fb1b5d-0fbf-4f11-a4f6-37a687a67c73)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f29-4109d37723affdb41c1a1620;86fb1b5d-0fbf-4f11-a4f6-37a687a67c73)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+2024-11-07 00:41:33:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-06, lora_dimension=64, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-07 00:41:33:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-07 00:41:33:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 401 0
+2024-11-07 00:41:34:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 401 0
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 406, in hf_raise_for_status
+    response.raise_for_status()
+  File "/packages/apps/mamba/1.5.8/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 862, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 969, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1484, in _raise_on_head_call_error
+    raise head_call_error
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1376, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1296, in get_hf_file_metadata
+    r = _request_wrapper(
+        ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 277, in _request_wrapper
+    response = _request_wrapper(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 301, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/huggingface_hub/utils/_http.py", line 423, in hf_raise_for_status
+    raise _format(GatedRepoError, message, response) from e
+huggingface_hub.errors.GatedRepoError: 401 Client Error. (Request ID: Root=1-672c6f2d-49d55eb63ae24d190cbf51d6;9ea1c3bb-7819-45a7-9ec1-f83c27084205)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 168, in main
+    tokenizer, num_new_tokens = load_tokenizer(args.model_id)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/shrey/timeset/src/utils_model.py", line 192, in load_tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 864, in from_pretrained
+    config = AutoConfig.from_pretrained(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/models/auto/configuration_auto.py", line 1006, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 570, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 629, in _get_config_dict
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/sbhadiya/.local/lib/python3.12/site-packages/transformers/utils/hub.py", line 421, in cached_file
+    raise EnvironmentError(
+OSError: You are trying to access a gated repo.
+Make sure to have access to it at https://huggingface.co/meta-llama/Llama-3.2-3B.
+401 Client Error. (Request ID: Root=1-672c6f2d-49d55eb63ae24d190cbf51d6;9ea1c3bb-7819-45a7-9ec1-f83c27084205)
+
+Cannot access gated repo for url https://huggingface.co/meta-llama/Llama-3.2-3B/resolve/main/config.json.
+Access to model meta-llama/Llama-3.2-3B is restricted. You must have access to it and be authenticated to access it. Please log in.

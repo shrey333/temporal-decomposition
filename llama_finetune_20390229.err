@@ -1,0 +1,769 @@
+
+=====================================================================
+This module is intended solely for building or source activating user
+python environments, i.e.,
+
+    mamba create -n myenv -c conda-forge
+
+or
+
+    source activate myenv
+
+To list available environments, run:
+
+    mamba info --envs
+
+See our docs: https://links.asu.edu/solpy
+
+Any other use is NOT TESTED.
+=====================================================================
+
+  
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 24.5.0
+    latest version: 24.9.2
+
+Please update conda by running
+
+    $ conda update -n base -c conda-forge conda
+
+
+error    libmamba Could not open lockfile '/packages/apps/mamba/1.5.8/pkgs/cache/cache.lock'
+warning  libmamba Cache file "/home/sbhadiya/.conda/pkgs/cache/47929eba.json" was modified by another program
+error    libmamba Could not open lockfile '/packages/apps/mamba/1.5.8/pkgs/cache/cache.lock'
+warning  libmamba Cache file "/home/sbhadiya/.conda/pkgs/cache/3e39a7aa.json" was modified by another program
+error    libmamba Could not open lockfile '/packages/apps/mamba/1.5.8/pkgs/cache/cache.lock'
+warning  libmamba Cache file "/home/sbhadiya/.conda/pkgs/cache/2ce54b42.json" was modified by another program
+error    libmamba Could not open lockfile '/packages/apps/mamba/1.5.8/pkgs/cache/cache.lock'
+warning  libmamba Cache file "/home/sbhadiya/.conda/pkgs/cache/4ea078d6.json" was modified by another program
+2024-11-09 00:17:19:INFO - #examples: 24523
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 5, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 6, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 6, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 6, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 6, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 6, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 6, not the default 3.
+2024-11-09 00:17:22:WARNING - This question is annotated by 6, not the default 3.
+2024-11-09 00:17:22:INFO - #examples: 1483
+2024-11-09 00:17:27:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=0.0001, lora_dimension=16, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:17:27:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:17:27:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:17:27:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:17:27:INFO - update tokenizer's post_processor
+2024-11-09 00:17:27:INFO - Create dataset for Decoder model
+2024-11-09 00:17:28:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:17:28:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:17:28:DEBUG - dataloader_dev[0]
+2024-11-09 00:17:28:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:17:28:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:17:28:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:17:28:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:17:28:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:17:28:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:17:28:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:17:28:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:17:28:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.62it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.06it/s]
+2024-11-09 00:17:29:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:17:29:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:17:49:INFO - device map: {'': 'cpu'}
+2024-11-09 00:17:49:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=16, target_modules=None, lora_alpha=16, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:17:49:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:17:49:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:17:50:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:17:50:INFO - Training start
+2024-11-09 00:17:50:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:17:54:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-05, lora_dimension=16, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:17:54:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:17:55:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:17:55:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:17:55:INFO - update tokenizer's post_processor
+2024-11-09 00:17:55:INFO - Create dataset for Decoder model
+2024-11-09 00:17:55:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:17:55:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:17:55:DEBUG - dataloader_dev[0]
+2024-11-09 00:17:55:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:17:55:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:17:55:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:17:55:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:17:55:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:17:56:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:17:56:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:17:56:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:17:56:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.70it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.70it/s]
+2024-11-09 00:17:56:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:17:56:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:18:15:INFO - device map: {'': 'cpu'}
+2024-11-09 00:18:15:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=16, target_modules=None, lora_alpha=16, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:18:15:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:18:15:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:18:16:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:18:16:INFO - Training start
+2024-11-09 00:18:16:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:18:20:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-06, lora_dimension=16, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:18:20:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:18:20:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:18:20:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:18:20:INFO - update tokenizer's post_processor
+2024-11-09 00:18:20:INFO - Create dataset for Decoder model
+2024-11-09 00:18:20:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:18:20:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:18:20:DEBUG - dataloader_dev[0]
+2024-11-09 00:18:20:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:18:20:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:18:20:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:18:20:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:18:20:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:18:21:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:18:21:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:18:21:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:18:21:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  9.24it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.01it/s]
+2024-11-09 00:18:21:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:18:21:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:18:41:INFO - device map: {'': 'cpu'}
+2024-11-09 00:18:41:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=16, target_modules=None, lora_alpha=16, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:18:41:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:18:41:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:18:42:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:18:42:INFO - Training start
+2024-11-09 00:18:42:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:18:46:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=0.0001, lora_dimension=64, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:18:46:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:18:46:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:18:46:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:18:46:INFO - update tokenizer's post_processor
+2024-11-09 00:18:46:INFO - Create dataset for Decoder model
+2024-11-09 00:18:47:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:18:47:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:18:47:DEBUG - dataloader_dev[0]
+2024-11-09 00:18:47:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:18:47:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:18:47:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:18:47:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:18:47:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:18:47:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:18:47:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:18:47:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:18:47:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  7.07it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.56it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  7.47it/s]
+2024-11-09 00:18:47:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:18:47:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:19:07:INFO - device map: {'': 'cpu'}
+2024-11-09 00:19:07:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=64, target_modules=None, lora_alpha=16, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:19:07:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:19:07:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:19:08:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:19:08:INFO - Training start
+2024-11-09 00:19:08:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:19:12:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-05, lora_dimension=64, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:19:12:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:19:12:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:19:12:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:19:12:INFO - update tokenizer's post_processor
+2024-11-09 00:19:12:INFO - Create dataset for Decoder model
+2024-11-09 00:19:12:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:19:12:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:19:12:DEBUG - dataloader_dev[0]
+2024-11-09 00:19:12:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:19:12:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:19:12:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:19:12:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:19:12:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:19:13:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:19:13:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:19:13:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:19:13:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  5.66it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  5.12it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  5.19it/s]
+2024-11-09 00:19:13:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:19:13:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:19:33:INFO - device map: {'': 'cpu'}
+2024-11-09 00:19:33:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=64, target_modules=None, lora_alpha=16, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:19:33:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:19:33:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:19:34:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:19:34:INFO - Training start
+2024-11-09 00:19:34:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:19:38:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-06, lora_dimension=64, lora_alpha=16, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:19:38:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:19:38:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:19:38:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:19:38:INFO - update tokenizer's post_processor
+2024-11-09 00:19:38:INFO - Create dataset for Decoder model
+2024-11-09 00:19:39:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:19:39:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:19:39:DEBUG - dataloader_dev[0]
+2024-11-09 00:19:39:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:19:39:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:19:39:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:19:39:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:19:39:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:19:39:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:19:39:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:19:39:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:19:39:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  7.97it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.93it/s]
+2024-11-09 00:19:40:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:19:40:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:19:59:INFO - device map: {'': 'cpu'}
+2024-11-09 00:19:59:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=64, target_modules=None, lora_alpha=16, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:19:59:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:19:59:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:20:00:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:20:00:INFO - Training start
+2024-11-09 00:20:00:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:20:04:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=0.0001, lora_dimension=16, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:20:04:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:20:04:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:20:05:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:20:05:INFO - update tokenizer's post_processor
+2024-11-09 00:20:05:INFO - Create dataset for Decoder model
+2024-11-09 00:20:05:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:20:05:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:20:05:DEBUG - dataloader_dev[0]
+2024-11-09 00:20:05:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:20:05:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:20:05:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:20:05:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:20:05:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:20:05:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:20:05:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:20:05:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:20:06:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  9.73it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.78it/s]
+2024-11-09 00:20:06:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:20:06:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:20:26:INFO - device map: {'': 'cpu'}
+2024-11-09 00:20:26:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=16, target_modules=None, lora_alpha=64, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:20:26:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:20:26:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:20:27:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:20:27:INFO - Training start
+2024-11-09 00:20:27:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:20:30:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-05, lora_dimension=16, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:20:30:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:20:30:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:20:31:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:20:31:INFO - update tokenizer's post_processor
+2024-11-09 00:20:31:INFO - Create dataset for Decoder model
+2024-11-09 00:20:31:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:20:31:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:20:31:DEBUG - dataloader_dev[0]
+2024-11-09 00:20:31:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:20:31:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:20:31:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:20:31:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:20:31:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:20:31:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:20:31:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:20:31:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:20:31:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.78it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.47it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.50it/s]
+2024-11-09 00:20:32:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:20:32:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:20:53:INFO - device map: {'': 'cpu'}
+2024-11-09 00:20:53:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=16, target_modules=None, lora_alpha=64, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:20:53:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:20:53:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:20:53:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:20:53:INFO - Training start
+2024-11-09 00:20:53:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:20:57:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-06, lora_dimension=16, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:20:57:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:20:57:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:20:58:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:20:58:INFO - update tokenizer's post_processor
+2024-11-09 00:20:58:INFO - Create dataset for Decoder model
+2024-11-09 00:20:58:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:20:58:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:20:58:DEBUG - dataloader_dev[0]
+2024-11-09 00:20:58:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:20:58:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:20:58:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:20:58:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:20:58:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:20:58:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:20:58:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:20:58:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:20:58:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.65it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.91it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.85it/s]
+2024-11-09 00:20:59:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:20:59:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:21:18:INFO - device map: {'': 'cpu'}
+2024-11-09 00:21:18:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=16, target_modules=None, lora_alpha=64, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:21:18:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:21:18:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:21:19:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:21:19:INFO - Training start
+2024-11-09 00:21:19:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:21:23:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=0.0001, lora_dimension=64, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:21:23:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:21:23:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:21:23:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:21:23:INFO - update tokenizer's post_processor
+2024-11-09 00:21:23:INFO - Create dataset for Decoder model
+2024-11-09 00:21:24:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:21:24:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:21:24:DEBUG - dataloader_dev[0]
+2024-11-09 00:21:24:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:21:24:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:21:24:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:21:24:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:21:24:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:21:24:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:21:24:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:21:24:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:21:24:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  9.60it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.08it/s]
+2024-11-09 00:21:24:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:21:24:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:21:43:INFO - device map: {'': 'cpu'}
+2024-11-09 00:21:43:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=64, target_modules=None, lora_alpha=64, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:21:43:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:21:43:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:21:44:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:21:44:INFO - Training start
+2024-11-09 00:21:44:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:21:47:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-05, lora_dimension=64, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:21:47:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:21:48:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:21:48:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:21:48:INFO - update tokenizer's post_processor
+2024-11-09 00:21:48:INFO - Create dataset for Decoder model
+2024-11-09 00:21:48:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:21:48:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:21:48:DEBUG - dataloader_dev[0]
+2024-11-09 00:21:48:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:21:48:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:21:48:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:21:48:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:21:48:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:21:48:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:21:48:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:21:48:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:21:48:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  9.71it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 10.18it/s]
+2024-11-09 00:21:49:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:21:49:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:22:08:INFO - device map: {'': 'cpu'}
+2024-11-09 00:22:08:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=64, target_modules=None, lora_alpha=64, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:22:08:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:22:08:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:22:09:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:22:09:INFO - Training start
+2024-11-09 00:22:09:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
+2024-11-09 00:22:13:INFO - Arguments: Namespace(batch_size=8, dataset_name='torque', device='cuda', dirpath_log=PosixPath('log'), dirpath_output=PosixPath('torque-output'), filepath_data_train=PosixPath('data/preprocess/torque/train_train.json'), filepath_data_dev=PosixPath('data/preprocess/torque/train_dev.json'), local_rank=0, finetune_type='peft', peft_type='lora', learning_rate=1e-06, lora_dimension=64, lora_alpha=64, lora_dropout=0.1, max_new_tokens=64, model_id='meta-llama/Llama-3.2-3B', num_demonstration=0, num_epoch=10, num_gpu=1, precision_type='bfloat16', save_model_weight=True, seed=7, temperature=0.0, warmup=True)
+2024-11-09 00:22:13:DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2024-11-09 00:22:13:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/tokenizer_config.json HTTP/11" 200 0
+2024-11-09 00:22:13:INFO - the tokenizer does not have a pad token, so add [PAD] as pad token
+2024-11-09 00:22:13:INFO - update tokenizer's post_processor
+2024-11-09 00:22:13:INFO - Create dataset for Decoder model
+2024-11-09 00:22:14:INFO - [#examples] train: 19619, dev: 4904
+2024-11-09 00:22:14:DEBUG - dataset_dev[0]: {'example_id': 0, 'template_id': 0, 'input': 'question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: ', 'output': 'crisis'}
+2024-11-09 00:22:14:DEBUG - dataloader_dev[0]
+2024-11-09 00:22:14:DEBUG - input_ids[0]: [128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220, 5192, 9667, 128001, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256]
+2024-11-09 00:22:14:DEBUG - decoded[0]: <|begin_of_text|>question: What started before the government was cracking down on protests? context: The situation is increasingly tense as rebels have said they will be in Kinshasa before June and the government has been cracking down on opposition protests in the capital. It was apparently the first time in the Zairean crisis that an embassy has urged all its nationals to leave the country. answer: crisis<|end_of_text|>[PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD][PAD]
+2024-11-09 00:22:14:DEBUG - labels[0]: [-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 5192, 9667, 128001, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100]
+2024-11-09 00:22:14:DEBUG - input_ids_eval[0]: [128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128256, 128000, 7998, 25, 3639, 3940, 1603, 279, 3109, 574, 52829, 1523, 389, 22670, 30, 2317, 25, 578, 6671, 374, 15098, 43787, 439, 36723, 617, 1071, 814, 690, 387, 304, 31991, 939, 15790, 1603, 5651, 323, 279, 3109, 706, 1027, 52829, 1523, 389, 14076, 22670, 304, 279, 6864, 13, 1102, 574, 14132, 279, 1176, 892, 304, 279, 1901, 12267, 276, 11501, 430, 459, 46567, 706, 28932, 682, 1202, 57011, 311, 5387, 279, 3224, 13, 4320, 25, 220]
+2024-11-09 00:22:14:INFO - Load model weight with torch.bfloat16 precision
+2024-11-09 00:22:14:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`. This was detected when initializing the generation config instance, which means the corresponding file may hold incorrect parameterization and should be fixed.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.6` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:595: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+2024-11-09 00:22:14:INFO - generation config: GenerationConfig {
+  "bos_token_id": 128000,
+  "eos_token_id": 128001,
+  "max_new_tokens": 64,
+  "pad_token_id": 128256,
+  "temperature": 0.0,
+  "top_p": 0.9
+}
+
+2024-11-09 00:22:14:INFO - Load model params from meta-llama/Llama-3.2-3B
+2024-11-09 00:22:14:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/config.json HTTP/11" 200 0
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  8.05it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  9.03it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.86it/s]
+2024-11-09 00:22:14:DEBUG - https://huggingface.co:443 "HEAD /meta-llama/Llama-3.2-3B/resolve/main/generation_config.json HTTP/11" 200 0
+2024-11-09 00:22:14:DEBUG - Resize model's embedding to 128257.
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+2024-11-09 00:22:33:INFO - device map: {'': 'cpu'}
+2024-11-09 00:22:33:INFO - peft config: LoraConfig(peft_type=<PeftType.LORA: 'LORA'>, auto_mapping=None, base_model_name_or_path=None, revision=None, task_type=<TaskType.CAUSAL_LM: 'CAUSAL_LM'>, inference_mode=False, r=64, target_modules=None, lora_alpha=64, lora_dropout=0.1, fan_in_fan_out=False, bias='none', use_rslora=False, modules_to_save=None, init_lora_weights=True, layers_to_transform=None, layers_pattern=None, rank_pattern={}, alpha_pattern={}, megatron_config=None, megatron_core='megatron.core', loftq_config={}, use_dora=False, layer_replication=None, runtime_config=LoraRuntimeConfig(ephemeral_gpu_offload=False))
+2024-11-09 00:22:33:DEBUG - Loading bitsandbytes native library from: /home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/bitsandbytes/libbitsandbytes_cpu.so
+2024-11-09 00:22:33:WARNING - The installed version of bitsandbytes was compiled without GPU support. 8-bit optimizers, 8-bit multiplication, and GPU quantization are unavailable.
+2024-11-09 00:22:33:INFO - warmup: True, init learning rate: [0.0]
+2024-11-09 00:22:33:INFO - Training start
+2024-11-09 00:22:33:INFO - Epoch: 0
+  0%|          | 0/2453 [00:00<?, ?it/s]  0%|          | 0/2453 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 458, in <module>
+    main(args)
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 318, in main
+    loss_train = train_one_epoch(
+  File "/home/sbhadiya/shrey/timeset/src/finetune_generation.py", line 144, in train_one_epoch
+    input_ids=input_ids.to(device),
+  File "/home/sbhadiya/.conda/envs/timeset/lib/python3.10/site-packages/torch/cuda/__init__.py", line 310, in _lazy_init
+    raise AssertionError("Torch not compiled with CUDA enabled")
+AssertionError: Torch not compiled with CUDA enabled
