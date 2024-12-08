@@ -37,7 +37,6 @@ TORQUE/data/
 
 # Logs
 log/
-*.log
 logs/
 logging/
 

@@ -1,0 +1,155 @@
+Channels:
+ - conda-forge
+ - huggingface
+ - nvidia
+ - pytorch
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... By downloading and using the CUDA Toolkit conda packages, you accept the terms and conditions of the CUDA End User License Agreement (EULA): https://docs.nvidia.com/cuda/eula/index.html
+
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate timeset
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+Transaction
+
+  Prefix: /home/sbhadiya/.conda/envs/timeset
+
+  Updating specs:
+
+   - nvidia/label/cuda-12.4.0::cuda-toolkit
+   - ca-certificates
+   - certifi
+   - openssl
+
+
+  Package                        Version  Build       Channel                        Size
+───────────────────────────────────────────────────────────────────────────────────────────
+  Install:
+───────────────────────────────────────────────────────────────────────────────────────────
+
+  + cuda-documentation           12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + nsight-compute           2024.1.0.13  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nvprune                 12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nvml-dev                12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nsight                  12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-cuxxfilt                12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-cuobjdump               12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libcufile                   1.9.0.20  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nvdisasm                12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nvprof                  12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nvcc                    12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-cccl                    12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-driver-dev              12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-profiler-api            12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-cudart                  12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nvrtc                   12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-opencl                  12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libcublas                  12.4.2.65  0           nvidia/label/cuda-12.4.0     Cached
+  + libcufft                   11.2.0.44  0           nvidia/label/cuda-12.4.0     Cached
+  + libcurand                 10.3.5.119  0           nvidia/label/cuda-12.4.0     Cached
+  + libcusolver                11.6.0.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libcusparse               12.3.0.142  0           nvidia/label/cuda-12.4.0     Cached
+  + libnpp                      12.2.5.2  0           nvidia/label/cuda-12.4.0     Cached
+  + libnvfatbin                  12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libnvjitlink                 12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libnvjpeg                  12.3.1.89  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-cupti                   12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-gdb                     12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nvtx                    12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-sanitizer-api           12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nsight-compute           12.4.0  0           nvidia/label/cuda-12.4.0     Cached
+  + libcufile-dev               1.9.0.20  0           nvidia/label/cuda-12.4.0     Cached
+  + gds-tools                   1.9.0.20  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nvvp                    12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-compiler                 12.4.0  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-cudart-dev              12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nvrtc-dev               12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-opencl-dev              12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libcublas-dev              12.4.2.65  0           nvidia/label/cuda-12.4.0     Cached
+  + libcufft-dev               11.2.0.44  0           nvidia/label/cuda-12.4.0     Cached
+  + libcurand-dev             10.3.5.119  0           nvidia/label/cuda-12.4.0     Cached
+  + libcusolver-dev            11.6.0.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libcusparse-dev           12.3.0.142  0           nvidia/label/cuda-12.4.0     Cached
+  + libnpp-dev                  12.2.5.2  0           nvidia/label/cuda-12.4.0     Cached
+  + libnvfatbin-dev              12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libnvjitlink-dev             12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libnvjpeg-dev              12.3.1.89  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-libraries                12.4.0  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-cupti-static            12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-command-line-tools       12.4.0  0           nvidia/label/cuda-12.4.0     Cached
+  + libcufile-static            1.9.0.20  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-cudart-static           12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-nvrtc-static            12.4.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libcublas-static           12.4.2.65  0           nvidia/label/cuda-12.4.0     Cached
+  + libcufft-static            11.2.0.44  0           nvidia/label/cuda-12.4.0     Cached
+  + libcurand-static          10.3.5.119  0           nvidia/label/cuda-12.4.0     Cached
+  + libcusolver-static         11.6.0.99  0           nvidia/label/cuda-12.4.0     Cached
+  + libcusparse-static        12.3.0.142  0           nvidia/label/cuda-12.4.0     Cached
+  + libnpp-static               12.2.5.2  0           nvidia/label/cuda-12.4.0     Cached
+  + libnvjpeg-static           12.3.1.89  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-libraries-dev            12.4.0  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-libraries-static         12.4.0  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-visual-tools             12.4.0  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-tools                    12.4.0  0           nvidia/label/cuda-12.4.0     Cached
+  + cuda-toolkit                  12.4.0  0           nvidia/label/cuda-12.4.0     Cached
+
+  Upgrade:
+───────────────────────────────────────────────────────────────────────────────────────────
+
+  - ca-certificates            2024.8.30  hbcca054_0  conda-forge                  Cached
+  + ca-certificates            2024.9.24  h06a4308_0  pkgs/main                    Cached
+
+  Summary:
+
+  Install: 65 packages
+  Upgrade: 1 packages
+
+  Total download: 0 B
+
+───────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+Looking for: ['nvidia/label/cuda-12.4.0::cuda-toolkit']
+
+
+Pinned packages:
+  - python 3.10.*
+
+
+
+Downloading and Extracting Packages: ...working... done
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+2.5.1.post103
+None
+False
+None
+Activated environment: timeset
+trainable params: 4,587,520 || all params: 3,217,340,416 || trainable%: 0.1426
+trainable params: 4,587,520 || all params: 3,217,340,416 || trainable%: 0.1426
+trainable params: 4,587,520 || all params: 3,217,340,416 || trainable%: 0.1426
+trainable params: 18,350,080 || all params: 3,231,102,976 || trainable%: 0.5679
+trainable params: 18,350,080 || all params: 3,231,102,976 || trainable%: 0.5679
+trainable params: 18,350,080 || all params: 3,231,102,976 || trainable%: 0.5679
+trainable params: 4,587,520 || all params: 3,217,340,416 || trainable%: 0.1426
+trainable params: 4,587,520 || all params: 3,217,340,416 || trainable%: 0.1426
+trainable params: 4,587,520 || all params: 3,217,340,416 || trainable%: 0.1426
+trainable params: 18,350,080 || all params: 3,231,102,976 || trainable%: 0.5679
+trainable params: 18,350,080 || all params: 3,231,102,976 || trainable%: 0.5679
+trainable params: 18,350,080 || all params: 3,231,102,976 || trainable%: 0.5679
+Benchmarking script failed.
