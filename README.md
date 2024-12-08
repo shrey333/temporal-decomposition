@@ -2,32 +2,13 @@
 
 This repository contains code for temporal event ordering using Large Language Models (LLMs) on the TORQUE and MATRES datasets.
 
-## Project Structure
-
-├── MATRES/
-│ ├── data/ # Raw MATRES annotations
-│ ├── preprocess/ # Preprocessed MATRES data
-│ ├── results/ # Model predictions and evaluations
-│ └── StructTempRel-EMNLP17/ # Original MATRES dataset
-├── TORQUE/
-│ ├── data/ # Raw TORQUE dataset
-│ ├── preprocess/ # Preprocessed TORQUE data
-│ └── results/ # Model predictions and evaluations
-├── log/ # Log files
-├── preprocess_matres.py # MATRES preprocessing script
-├── preprocess_torque.py # TORQUE preprocessing script
-├── finetune.py # Fine-tuning script for LLaMA model
-├── gemini_inference_matres.py # Inference script for MATRES using Gemini
-└── gemini_inference_torque.py # Inference script for TORQUE using Gemini
-
 ## Setup
 
 1. Environment Setup
 
 ```bash
-conda create -n timeset python=3.9
-conda activate timeset
-pip install -r requirements.txt
+mamba env create -f timeset.yaml -y
+source activate timeset
 ```
 
 2. API Keys
